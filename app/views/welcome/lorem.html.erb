@@ -1,6 +1,6 @@
-<h1><%="#{@type.capitalize} ipsum:"%></h1>
-<p>
-  <%@num.to_i.times do%>
-    <%="#{@output}"+"\n"%>
-  <%end %>
-</p>
+<!-- before filter -->
+<!-- try -->
+<h1><%=@type.capitalize %> ipsum:</h1>
+<% @output.each do |paragraph| %>
+  <p><%= paragraph %></p>
+<% end %>
